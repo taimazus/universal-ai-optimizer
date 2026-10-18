@@ -27,7 +27,7 @@
 در ویندوز، **PowerShell (Run as Administrator)** را باز کنید و دستور زیر را اجرا کنید:
 
 ```powershell
-irm https://raw.githubusercontent.com/taimazus/universal-ai-optimizer/main/setup-ai-optimizer.ps1 | iex
+Set-ExecutionPolicy Bypass -Scope Process -Force; irm https://raw.githubusercontent.com/taimazus/universal-ai-optimizer/main/setup-ai-optimizer.ps1 | iex
 ```
 
 با این یک خط، هر دو ابزار دانلود، کامپایل، در تمام IDEها ثبت و فعال می‌شوند.
@@ -46,3 +46,6 @@ irm https://raw.githubusercontent.com/taimazus/universal-ai-optimizer/main/setup
 طراحی و توسعه توسط **[Taimazus](https://github.com/taimazus)**  
 - ریپازیتوری بهینه‌ساز: [taimazus/universal-ai-optimizer](https://github.com/taimazus/universal-ai-optimizer)  
 - ریپازیتوری بازرس امنیتی: [taimazus/universal-ai-audit](https://github.com/taimazus/universal-ai-audit)
+
+### ⚠️ رفع خطای دسترسی یا مسدودیت اسکریپت در ویندوز
+در صورتی که ویندوز خطای عدم دسترسی یا ExecutionPolicy داد، کافی است پنجره PowerShell را به صورت **Run as Administrator** باز کنید. عبارت Set-ExecutionPolicy Bypass ابتدای دستور، تمام موانع را برای این سشن به صورت خودکار باز می‌کند.

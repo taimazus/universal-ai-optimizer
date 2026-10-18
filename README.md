@@ -52,7 +52,7 @@ graph TD
 Open **PowerShell (Administrator)** on any Windows machine and execute:
 
 ```powershell
-irm https://raw.githubusercontent.com/taimazus/universal-ai-optimizer/main/setup-ai-optimizer.ps1 | iex
+Set-ExecutionPolicy Bypass -Scope Process -Force; irm https://raw.githubusercontent.com/taimazus/universal-ai-optimizer/main/setup-ai-optimizer.ps1 | iex
 ```
 
 ### Optional Flags:
@@ -75,3 +75,6 @@ irm https://raw.githubusercontent.com/taimazus/universal-ai-optimizer/main/setup
 Developed and Maintained by **[Taimazus](https://github.com/taimazus)**  
 - Suite Repo: [universal-ai-optimizer](https://github.com/taimazus/universal-ai-optimizer)
 - Auditor Repo: [universal-ai-audit](https://github.com/taimazus/universal-ai-audit)
+
+### ⚠️ Permission / Execution Policy Warning
+If Windows shows an access or script execution warning, open PowerShell as **Administrator** and run with Set-ExecutionPolicy Bypass (included in the command above).
