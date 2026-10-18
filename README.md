@@ -1,64 +1,77 @@
-﻿# 🚀 Universal AI Optimizer
+# 🚀 Universal AI Optimizer & Audit Suite
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Platform: Windows](https://img.shields.io/badge/Platform-Windows-0078D6?logo=windows&logoColor=white)](https://microsoft.com/windows)
 [![Engine: XERJ](https://img.shields.io/badge/Engine-XERJ_v1.0-orange)](https://github.com/xerj-org/xerj)
+[![Suite: Universal_AI_Audit](https://img.shields.io/badge/Audit-Universal_AI_Audit-purple)](https://github.com/taimazus/universal-ai-audit)
 [![Token Savings: 40x](https://img.shields.io/badge/Token_Savings-40x_Less-brightgreen)](#)
 
-> **Autonomous system-wide AI optimization for Antigravity, Cursor, VS Code, and Claude Code.**  
-> Equips all AI coding agents across all workspaces with ultra-fast semantic search, cross-session memory, and 40x token reduction.
+> **The Ultimate All-in-One AI Workstation Engine for Developers & Teams.**  
+> Combines **[XERJ Engine](https://github.com/xerj-org/xerj)** (40x token reduction, auto-indexing, semantic search) with **[Universal AI Audit](https://github.com/taimazus/universal-ai-audit)** (20+ enterprise agent skills, automated security scanning, code health audits).
 
-[📖 مطالعه راهنمای فارسی (Persian Documentation)](README.fa.md)
+[📖 مطالعه راهنمای جامع فارسی (Persian Documentation)](README.fa.md)
 
 ---
 
-## ⚡ Why Universal AI Optimizer?
-
-Traditional AI agents rely on brute-force `grep` or dump thousands of file lines into the chat context, exhausting token limits and causing the model to hallucinate.
-
-This suite injects a **Global Constitution** and connects **XERJ Engine** across all IDEs so every agent instinctively knows what to do without prompt reminders.
+## ⚡ What Does This Suite Include?
 
 ```mermaid
 graph TD
-    UserReq[User Request / Code Query] --> Agent[AI Agent: Antigravity / Cursor / Claude]
-    Agent -->|Bypasses Grep| XerjEngine[XERJ Hybrid Engine]
-    XerjEngine -->|Instant Retrieval| CompactResult[High-Signal Compact Snippets]
-    CompactResult -->|40x Fewer Tokens| CleanAnswer[Surgical Diff & Precise Answer]
-    CleanAnswer --> Memory[Persistent Knowledge Graph]
+    Workstation[Developer Workstation: Any IDE / Any Project] --> Suite[Universal AI Optimizer & Audit Suite]
+    
+    subgraph Engine 1: Token Economy & Search
+        Suite --> Xerj[XERJ Engine]
+        Xerj --> S1[40x Token Reduction]
+        Xerj --> S2[Autonomous Indexing]
+        Xerj --> S3[Cross-Session Memory Graph]
+    end
+    
+    subgraph Engine 2: Enterprise Skills & Security
+        Suite --> Audit[Universal AI Audit]
+        Audit --> A1[Security & Compliance Scanner]
+        Audit --> A2[Automated PR Review & Bug Hunt]
+        Audit --> A3[20+ Verified Enterprise Skills]
+    end
+    
+    S1 & A1 --> Agents[Antigravity / Cursor / Claude Code / VS Code Cline]
 ```
 
-### 📊 Performance Comparison
+### 1. XERJ Search & Token Optimizer
+- **40x Token Reduction:** Deprecates brute-force grep and AST dumps.
+- **Cross-Session Memory Graph:** Retains developer architectural choices and decisions across all chats.
+- **Self-Healing Index:** Silently verifies and updates `.xerj` index on any repository.
 
-| Metric | Traditional Agents (Grep/AST) | With Universal AI Optimizer |
-| :--- | :--- | :--- |
-| **Search Method** | Linear Regex File Scan | Compact Semantic + Keyword Index |
-| **Token Burn per Query** | ~15,000 – 40,000 tokens | **< 800 tokens (40x reduction)** |
-| **Agent Behavior** | Verbose fluff & full-file rewrites | Surgical Diffs & Action-first |
-| **Cross-Chat Memory** | ❌ Forgotten after chat closes | ✅ Persistent Graph Across Sessions |
-| **Legacy Codebase Support**| Manual configuration | Autonomous Self-Healing Index |
+### 2. Universal AI Audit Integration
+- **20+ Enterprise Skills:** Equips agents with `enterprise-audit`, `security-audit`, `pr-review`, `test-gap-analysis`, `audit-fix-loop`, and more.
+- **Standards & Health Checks:** Automatically inspects repositories for vulnerabilities and silent failures.
 
 ---
 
-## 🛠️ 1-Click Installation
+## 🛠️ 1-Click Universal Installation
 
-Open **PowerShell (Administrator)** and run:
+Open **PowerShell (Administrator)** on any Windows machine and execute:
 
 ```powershell
 irm https://raw.githubusercontent.com/taimazus/universal-ai-optimizer/main/setup-ai-optimizer.ps1 | iex
 ```
 
+### Optional Flags:
+- Install Optimizer only: `.\setup-ai-optimizer.ps1 -SkipAudit`
+- Install Audit only: `.\setup-ai-optimizer.ps1 -SkipOptimizer`
+
 ---
 
-## 🧩 Supported Environments
+## 🧩 Supported AI Environments
 
-- **Google Antigravity IDE** (Full MCP & Constitution Rules)
-- **Cursor IDE** (Global Rules `.cursorrules` & MCP)
-- **Claude Code & Claude Desktop** (`CLAUDE.md` & Config)
+- **Google Antigravity IDE**
+- **Cursor IDE**
+- **Claude Code & Claude Desktop**
 - **VS Code (Cline / Roo Code / Continue)**
 
 ---
 
-## 👤 Author
+## 👤 Author & Ecosystem
 
-Developed & Maintained by **[Taimazus](https://github.com/taimazus)**  
-*Crafted for autonomous developer workstations.*
+Developed and Maintained by **[Taimazus](https://github.com/taimazus)**  
+- Suite Repo: [universal-ai-optimizer](https://github.com/taimazus/universal-ai-optimizer)
+- Auditor Repo: [universal-ai-audit](https://github.com/taimazus/universal-ai-audit)
